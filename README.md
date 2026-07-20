@@ -1,61 +1,56 @@
-System Visualizer
+# System Visualizer
 
-https://img.shields.io/badge/build-passing-brightgreen
-https://img.shields.io/badge/License-MIT-blue.svg
-https://img.shields.io/badge/C++-17-blue
-https://img.shields.io/badge/platform-Linux-lightgrey
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/your-username/system_vis/actions)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![C++17](https://img.shields.io/badge/C++-17-blue)](https://isocpp.org/)
+[![Platform](https://img.shields.io/badge/platform-Linux-lightgrey)](https://www.linux.org/)
 
-Terminal-based system monitor with a beating ASCII heart
-🖼️ Demo
-Низкая нагрузка (зелёное)	Средняя нагрузка (жёлтое)	Высокая нагрузка (красное)
-https://docs/screenshot1.png	https://docs/screenshot2.png	https://docs/screenshot3.png
+**Terminal-based system monitor with a beating ASCII heart**
 
-Сердце меняет цвет и частоту пульса в зависимости от загрузки CPU.
-✨ Features
+---
 
-    ❤️ Beating ASCII heart – colour and pulse rate reflect CPU load
+## 🖼️ Screenshots
 
-    📊 Real-time CPU histogram – per‑core usage with coloured bars
+| Низкая нагрузка (зелёное) | Средняя нагрузка (жёлтое) | Высокая нагрузка (красное) |
+|:---:|:---:|:---:|
+| ![](docs/screenshot1.png) | ![](docs/screenshot2.png) | ![](docs/screenshot3.png) |
 
-    📈 Memory usage graph – smoothed line with history
+*Сердце меняет цвет и частоту пульса в зависимости от загрузки CPU.*
 
-    📋 Top processes – sorted by CPU usage, colour‑coded
+---
 
-    💾 Disk I/O – read/write speeds in KB
+## ✨ Features
 
-    🌐 Network connections – TCP socket count visualized as stars
+- ❤️ **Beating ASCII heart** – colour and pulse rate reflect CPU load
+- 📊 **Real-time CPU histogram** – per‑core usage with coloured bars
+- 📈 **Memory usage graph** – smoothed line with history
+- 📋 **Top processes** – sorted by CPU usage, colour‑coded
+- 💾 **Disk I/O** – read/write speeds in KB
+- 🌐 **Network connections** – TCP socket count visualized as stars
+- 🧩 **systemd units** – active services with dancing animation
+- 🎨 **Adaptive layout** – works in any terminal ≥ 80×24
+- 🚀 **Lightweight** – single C++ file, no external dependencies except ncurses
 
-    🧩 systemd units – active services with dancing animation
+---
 
-    🎨 Adaptive layout – works in any terminal ≥ 80×24
+## 🛠️ Installation
 
-    🚀 Lightweight – single C++ file, no external dependencies except ncurses
+### Prerequisites
+- **C++ compiler** (g++ ≥ 9 or clang ≥ 12)
+- **ncurses** development library
 
-🛠️ Installation
-Prerequisites
-
-    C++ compiler (g++ ≥ 9 or clang ≥ 12)
-
-    ncurses development library
-
-Ubuntu/Debian:
-bash
-
+**Ubuntu/Debian:**
 sudo apt update
 sudo apt install g++ libncurses-dev make
 
-Fedora:
-bash
-
+**Fedora:**
 sudo dnf install gcc-c++ ncurses-devel make
 
 Arch Linux:
-bash
 
 sudo pacman -S gcc ncurses make
 
 Build from source
-bash
 
 git clone https://github.com/your-username/system_vis.git
 cd system_vis
@@ -63,7 +58,6 @@ make
 
 The executable system_vis will be created in the project root.
 Run
-bash
 
 ./system_vis
 
@@ -80,19 +74,14 @@ Once running, the interface is divided into logical sections:
 
 All values update every 70ms, giving smooth real‑time feedback.
 📂 Project Structure
-text
 
 system_vis/
-├── .github/
-│   └── workflows/
-│       └── build.yml        # CI build pipeline
 ├── docs/
 │   ├── screenshot1.png      # low load
 │   ├── screenshot2.png      # medium load
 │   └── screenshot3.png      # high load
 ├── src/
-│   └── system_vis.cpp       # single-file implementation
-├── Makefile                 # build automation
+│   └── main.cpp       # single-file implementation
 ├── LICENSE                  # MIT License
 ├── .gitignore               # ignore build artefacts
 └── README.md                # this file
