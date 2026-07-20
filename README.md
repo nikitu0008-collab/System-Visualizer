@@ -52,7 +52,7 @@ sudo pacman -S gcc ncurses make
 
 Build from source
 
-git clone https://github.com/your-username/system_vis.git
+git clone https://github.com/nikitu0008-collab/system_vis.git
 cd system_vis
 make
 
