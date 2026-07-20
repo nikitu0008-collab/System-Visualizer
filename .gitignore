@@ -1,0 +1,15 @@
+# Compiled files
+*.o
+*.exe
+*.out
+system_vis
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary
+*.tmp
+*.log
