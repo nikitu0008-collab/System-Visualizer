@@ -13,7 +13,7 @@
 
 | Низкая нагрузка (зелёное) | Средняя нагрузка (жёлтое) | Высокая нагрузка (красное) |
 |:---:|:---:|:---:|
-| ![](docs/screenshot1.png) | ![](docs/screenshot2.png) | ![](docs/screenshot3.png) |
+| ![](docs/screenshot3.png) | ![](docs/screenshot2.png) | ![](docs/screenshot1.png) |
 
 *Сердце меняет цвет и частоту пульса в зависимости от загрузки CPU.*
 
@@ -75,11 +75,12 @@ Once running, the interface is divided into logical sections:
 All values update every 70ms, giving smooth real‑time feedback.
 📂 Project Structure
 
+
 system_vis/
 ├── docs/
-│   ├── screenshot1.png      # low load
+│   ├── screenshot1.png      # high load
 │   ├── screenshot2.png      # medium load
-│   └── screenshot3.png      # high load
+│   └── screenshot3.png      # low load
 ├── src/
 │   └── main.cpp       # single-file implementation
 ├── LICENSE                  # MIT License
