@@ -380,7 +380,7 @@ auto draw_box(int32_t y, int32_t x, int32_t height, int32_t width, const std::st
     attroff(COLOR_PAIR(color_pair) | A_BOLD);
 }
 
-// --------------------- График CPU (гистограмма) ---------------------
+//TODO График CPU (гистограмма)
 auto draw_cpu_graph(int32_t y, int32_t x, int32_t width, int32_t height, const std::vector<float>& cores, int32_t frame) noexcept -> void {
     if ((width < 6) || (height < 4)) {
         return;
